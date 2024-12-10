@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .imgdiv {
+    width: 100%;
+    height: 100%;
+    padding-left: 38px;
+    padding-right: 38px;
+    background-image: url("image-product-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container .textdiv {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .textdiv button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.container .textdiv .btn:hover {
+    background-color: hsl(158, 89%, 45%);
+    cursor: pointer;
+}
+
+.container .textdiv .price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .textdiv .price .new {
+    font-family: Fraunces;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container .textdiv .price .old {
+    font-family: Montserrat;
+    color: hsla(0, 0%, 0%, 0.500);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container .textdiv h1 {
+    font-family: Fraunces;
+    line-height: 1;
+    font-weight: 700;
+    padding: 0px 0px 0px 0px;
+}
+
+.container .textdiv .topheading {
+    font-family: Montserrat;
+    color: hsla(0, 0%, 0%, 0.500);
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.container .textdiv .discrip {
+    color: hsla(0, 0%, 0%, 0.500);
+    font-weight: 500;
+    font-size: 11px;
+    font-family: Montserrat;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 250px;
+        height: 500px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .container .imgdiv {
+        width: 100%;
+        height: 30%;
+        padding-left: 38px;
+        padding-right: 38px;
+        background-image: url("image-product-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container .textdiv {
+        width: 100%;
+        height: 70%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .container .textdiv h1 {
+        font-size: 25px;
+    }
+
+    .container .textdiv .btn {
+        width: 100%;
+        background-color: hsl(158, 36%, 37%);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 12px;
+        gap: 10px;
+        margin: 0px;
+        padding: 0px;       
+    }
+
+}
